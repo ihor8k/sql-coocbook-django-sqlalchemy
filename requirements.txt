@@ -1,0 +1,7 @@
+Django==2.1.4 # https://www.djangoproject.com/
+django-environ==0.4.5 # https://github.com/joke2k/django-environ
+
+SQLAlchemy==1.2.15 # https://www.sqlalchemy.org/
+
+psycopg2==2.7.6.1 # http://initd.org/psycopg/
+psycopg2-binary==2.7.6.1 # http://initd.org/psycopg/

@@ -7,3 +7,4 @@ SQL COOKBOOK
 
 | Requirement: Python3.7, Postgres10
 
+| SQL CookBook http://shop.oreilly.com/product/9780596009762.do

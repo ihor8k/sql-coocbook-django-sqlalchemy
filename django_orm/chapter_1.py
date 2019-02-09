@@ -18,7 +18,7 @@ from django.db.models import (
 )
 from django.db.models.functions import Concat, Coalesce
 
-from django_orm.core.models import Emp, Dept, T1, T10, T100
+from django_orm.core.models import Emp
 
 
 def task_1_p33():
@@ -144,6 +144,15 @@ def task_11_1_p44():
     return qs
 
 
+def task_12_p45():
+    # select ename, job from emp where deptno in (10, 20);
+    qs = (Emp.objects
+          .filter((Q(ename__contains='I') |
+                   Q(ename__contains='ER')), deptno__in=(10, 20))
+          .values('ename', 'job'))
+    return qs
+
+
 if __name__ == '__main__':
     print(task_1_p33())
     print(task_2_p34())
@@ -158,4 +167,5 @@ if __name__ == '__main__':
     print(task_10_p43())
     print(task_11_p44())
     print(task_11_1_p44())
+    print(task_12_p45())
 

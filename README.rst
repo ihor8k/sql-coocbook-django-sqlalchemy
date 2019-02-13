@@ -1,4 +1,4 @@
-SQL COOKBOOK
+SQL CookBook for Django orm and SQLAlchemy core
 ================================================================================
 
 
